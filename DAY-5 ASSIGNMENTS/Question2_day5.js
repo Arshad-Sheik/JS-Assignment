@@ -94,9 +94,7 @@ user1.login();
 mod.addcoins(user1,27);
 admin.addCourse(user1,'JavaScript').addCourse(user1,'Python').addCourse(user1,'Blockchain').addCourse(user1,'AI ML');
 
-console.log(user1.courses);
 admin.deleteCourse(user1,'JavaScript');
-console.log(user1.courses);
 admin.deleteCourse(user1,'AI ML');
 console.log(user1.courses);
 
