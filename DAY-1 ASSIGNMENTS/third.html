@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>JavaScript Assignment-3</title>
+        <h2>My third JavaScript Assignment</h2>
+        <h3>Assignment-3</h3>
+        <h4>JavaScript program to get the current date</h4>
+    </head>
+    <body>
+        <p>click the button to get the today's date in various formats :</p>
+        <p id = "hide" style = "display:none"><script>
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1;
+            var yyyy = today.getFullYear();
+
+            if(dd<10){
+                dd = '0' + dd;
+            }
+
+            if(mm<10){
+                mm = '0' + mm;
+            }
+            today = mm+'-'+dd+'-'+yyyy;
+            document.write(today);
+            document.write('<br>');
+            today = mm+'/'+dd+'/'+yyyy;
+            document.write(today);
+            document.write('<br>');
+            today = dd+'-'+mm+'-'+yyyy;
+            document.write(today);
+            document.write('<br>');
+            today = dd+'/'+mm+'/'+yyyy;
+            document.write(today);
+        
+        </script></p>
+        <button type="button" onclick="document.getElementById('hide').style.display='block'">Click to get the date</button>
+    </body>
+</html>
