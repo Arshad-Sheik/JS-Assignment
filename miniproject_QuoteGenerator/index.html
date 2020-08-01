@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+</head>
+<style>
+    h1 {
+        line-height: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: oblique;
+    }
+
+    #request{
+        line-height: 10px;
+        padding-left: 200px;
+        font-style: oblique;
+        font-size: 30px;
+    }
+
+    #btn {
+        position: relative;
+        left: 600px;
+    }
+
+    #quote {
+        line-height: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+        font-style: italic;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    #author {
+        padding-left: 1050px;
+        font-size: 25px;
+        font-weight: 10px;
+    }
+
+    #time {
+        text-align: end;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .darkmode {
+        background-color: black;
+        color: white;
+    }
+
+    footer{
+        text-align: end;
+        font-weight: 30px;
+        font-size: 30px;
+    }
+
+    #dark {
+        text-align: center;
+        position: relative;
+        right: auto;
+        float: right;
+    }
+
+    body {
+        background-color:burlywood;
+    }
+</style>
+<body>
+    <h3 id='time'></h3>
+    <button id ='dark' onclick="darkmode()">Switch to dark Mode</button>
+    <h1>Hey,<br> This is for you!</h1>
+    <b><p id='quote'></p></b>
+    <b><p id="author"></p></b>
+    <p id='request'>Click the button to get your quote</p>
+    <button  onclick="quotes()" id='btn'>Get your Quote</button>
+    <script src="script.js"></script>
+</body>
+<footer><b>Have a nice day!😊</b></footer>
+</html>
